@@ -1,0 +1,24 @@
+<div class="col-md-6">
+    <h2> Employee List</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let emp of empList">
+        <td class="hidden">{{emp.id}}</td>
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.dob}}</td>
+        <td>{{emp.department}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
